@@ -47,3 +47,22 @@ xplor4r:
       - title: "facebook"
         url: "https://www.facebook.com/sujay.kundu2"
 
+
+
+mrbang:
+   name: mrbang-00
+   username: JaeKyoung
+   site: https://mrbang-00/mrbang-00.github.io
+   avatar: xplor4r.png
+   bio: "Mrbang BackEnd Developer"
+   email: bang7233@gamil.com
+   social:
+      - title: "github"
+        url: "https://github.com/mrbang-00"
+      - title: "linkedin"
+        url: "https://www.linkedin.com/in/jaekyoung-bang-5384b7100/"
+      - title: "youtube"
+        url: "https://www.youtube.com/channel/UCXBXwszUpl-X9dWptcn76NA"
+      # - title: "facebook"
+      #   url: "https://www.facebook.com/sujay.kundu2"
+
