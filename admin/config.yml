@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sujaykundu777/sujaykundu777.github.io
+  repo: mrbang-00/mrbang-00.github.io
   branch: master
   site_domain: agitated-northcutt-53b578.netlify.app
 

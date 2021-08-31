@@ -18,7 +18,7 @@ If you aren’t familiar with Jekyll yet, you should know that it is a static si
 
 ### Steps to create your blog using devlopr-jekyll and Host using Github Pages :
 
->  **Step 1.**  Fork the repo - [click here](https://github.com/sujaykundu777/devlopr-jekyll/fork)
+>  **Step 1.**  Fork the repo - [click here](https://github.com/mrbang-00/mrbang-00.github.io/fork)
 
 ![Devlopr Jekyll Repo](/assets/img/posts/fork1.png){:class="img-fluid"}
 
