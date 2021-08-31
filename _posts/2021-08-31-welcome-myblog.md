@@ -4,6 +4,7 @@ author: mrbang
 title: Git Start
 date: 2021-08-28T16:00:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
+thumbnail: /assets/img/posts/hello.jpg"
 category: jekyll
 summary: 사용자 추가후 시작진행  
 keywords: git start 시작 블로그 계정추가 사용자추가 
