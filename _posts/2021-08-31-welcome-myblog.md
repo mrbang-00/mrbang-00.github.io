@@ -148,3 +148,169 @@ function sum (num1,num2){
 var result = sum(a,b);
 ```
 
+---
+
+이곳에 데이터 입력진행하기 
+
+---
+```
+좌측 ESC밑에 특수 키 
+-> 해당내역으로 구분을 해지 진행
+`이렇게는 강조를` 할수 있다.
+
+
+```
+
+
+---
+layout: page
+title: Guides
+permalink: /blog/categories/your_category_name/
+---
+
+<h5> Posts by Category : {{ page.title }} </h5>
+
+<div class="card">
+{% for post in site.categories.your_category_name %}
+ <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</div>
+```
+
+Using the category, all the posts associated with the category will be listed on
+`http://localhost:4000/blog/categories/your_category_name`
+
+
+For Example :
+
+- use this `$$E=mc^2$$`
+
+You should be able to see it in your post as: $$E=mc^2$$
+
+ use `$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$` to write :
+
+$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
+
+- Use `k_{n+1} = n^2 + k_n^2 - k_{n-1}` to write
+
+$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$
+
+
+Then add this frontmatter to describe the author in **johndoe.md**.
+```yml
+---
+name: John Doe # Name of the Author
+username: johndoe # Username of the Author
+bio: "Hi I a John, a Web Developer and Designer." # Author Bio
+site: http://johndoe.com  # Author Website URL
+avatar: johndoe.png  # Profile Image (img path will be /assets/img/authors/johndoe.png)
+email: mail@johndoe.com  # Author Email address
+social:  # Author Social profile links
+    - title: "github"
+      url: "https://github.com/johndoe"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/johndoe"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+    - title: "facebook"
+      url: "https://www.facebook.com/johndoe"
+    - title: "twitter"
+      url: "https://www.twitter.com/johndoe"
+    - title: "behance"
+      url: "https://behance.com/johndoe"
+    - title: "instagram"
+      url: "https://instagram.com/johndoe"
+    - title: "medium"
+      url: "https://medium.com/johndoe"
+    - title: "telegram"
+      url: "https://telegram.com/johndoe"
+    - title: "dribbble"
+      url: "https://dribbble.com/johndoe"
+    - title: "flickr"
+      url: "https://flickr.com/johndoe"
+---
+```
+You can create multiple authors similarly under _authors
+
+Next, copy the same frontmatter in _data/authors.yml (under individual author usernames) like this :
+
+```yml
+# Author 1
+johndoe:
+   name: John Doe
+   username: johndoe
+   site: http://johndoe.com
+   avatar: johndoe.png
+   bio: "Hi I a John, a Web Developer and Designer."
+   email: mail@johndoe.com
+   social:
+      - title: "github"
+        url: "https://github.com/johndoe"
+      - title: "linkedin"
+        url: "https://www.linkedin.com/in/johndoe"
+      - title: "youtube"
+        url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+      - title: "facebook"
+        url: "https://www.facebook.com/johndoe"
+      - title: "twitter"
+        url: "https://www.twitter.com/johndoe"
+      - title: "behance"
+        url: "https://behance.com/johndoe"
+      - title: "instagram"
+        url: "https://instagram.com/johndoe"
+      - title: "medium"
+        url: "https://medium.com/johndoe"
+      - title: "telegram"
+        url: "https://telegram.com/johndoe"
+      - title: "dribbble"
+        url: "https://dribbble.com/johndoe"
+      - title: "flickr"
+        url: "https://flickr.com/johndoe"
+
+# Author 2
+janedoe:
+   name: Jane Doe
+   username: janedoe
+   site: https://janedoe.com
+   avatar: jane.png
+   bio: "Designer"
+   email: mail@janedoe.com
+   social:
+      - title: "github"
+        url: "https://github.com/janedoe"
+      - title: "linkedin"
+        url: "https://www.linkedin.com/janedoe"
+      - title: "youtube"
+        url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+      - title: "facebook"
+        url: "https://www.facebook.com/janedoe"
+
+```
+
+Likewise ! This will be helpful for the widgets. (About Author, Recent Articles).
+
+### Adding Author to Post
+
+When creating a new post, just add the author in frontmatter using the username of the author
+
+For eg, In 2020-10-24-demo-article.md
+```yml
+---
+layout: post
+title: "Demo Article"
+author: janedoe
+---
+This is Jane Doe's Article
+```
+
+Now there will be Authors widget in Blog Sidebar, showing all authors like this :
+
+![Author Sidebar Widget](https://res.cloudinary.com/sujaykundu/image/upload/c_scale,fl_progressive,w_400/v1603700133/3_tiuar0.png)
+
+Also a Author Profile Page will be created for Jane Doe to showcase her written articles.
+
+![Author Page](https://res.cloudinary.com/sujaykundu/image/upload/c_scale,fl_progressive,w_400/v1603643237/1_ee3yke.png)
+
+Also, below this article you can see the Author Profile Card , who has written the article too ! ;)
+
+Cheers ! Hope You enjoy this new feature. :D
