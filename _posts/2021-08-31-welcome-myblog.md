@@ -62,3 +62,89 @@ function sum (num1,num2){
 var result = sum(a,b);
 ```
 
+## 윈도우서버에서 백업정책 만들기 
+
+소스백업시 고려해야할 사항 
+
+ `서버의 용량을 체크한다. `
+ `백업 기준을 잡는다. 로컬에서 몇일, 배업할 대상의 서버에서는 몇일 동안진행할지 `
+
+윈도우 서버에서 bat파일 후 스케줄러를 통한 
+
+
+For Example :
+
+- use this `$$E=mc^2$$`
+
+You should be able to see it in your post as: $$E=mc^2$$
+
+ use `$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$` to write :
+
+$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
+
+- Use `k_{n+1} = n^2 + k_n^2 - k_{n-1}` to write
+
+$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$
+
+
+## Adding Multiple Categories in Posts
+
+To add categories in blog posts all you have to do is add a **category** key with category values in frontmatter of the post :
+
+```
+---
+category: ['jekyll', 'guides', 'sample_category']
+---
+```
+
+Then to render this category using link and pages. All we need to do is,
+
+1. Create a new file with [your_category_name].md inside categories folder.
+
+2. Copy categories/sample_category.md file and replace the content in [your_category_name].md in that. (Please don't copy the code below its just sample, since it renders the jekyll syntax dynamically)
+
+```jsx
+---
+layout: page
+title: Guides
+permalink: /blog/categories/your_category_name/
+---
+
+<h5> Posts by Category : {{ page.title }} </h5>
+
+<div class="card">
+{% for post in site.categories.your_category_name %}
+ <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</div>
+```
+
+Using the category, all the posts associated with the category will be listed on
+`http://localhost:4000/blog/categories/your_category_name`
+
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+or
+
+```javascript
+var a = 1;
+var b = 2;
+function sum (num1,num2){
+  return num1+num2;
+}
+var result = sum(a,b);
+```
+
