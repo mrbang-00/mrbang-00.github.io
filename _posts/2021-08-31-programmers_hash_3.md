@@ -1,11 +1,11 @@
 ---
 layout: post
 author: mrbang
-title: programmers_해시_위장
+title: Programmers_해시_위장
 date: 2021-09-02T11:30:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
 thumbnail: /assets/img/posts/hello.jpg"
-category: gitblog
+category: Programmers
 summary: 프로그래머스 해시 3차 문제 
 keywords: 프로그래머스 programmers hash 3차 
 permalink: /blog/2021-08-31-programmers_hash_3/

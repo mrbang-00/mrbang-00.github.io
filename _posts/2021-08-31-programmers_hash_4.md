@@ -5,7 +5,7 @@ title: Programmers_해시_베스트앨범
 date: 2021-09-02T11:30:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
 thumbnail: /assets/img/posts/hello.jpg"
-category: gitblog
+category: Programmers
 summary: 프로그래머스 해시 4차 문제 
 keywords: 프로그래머스 programmers hash 4차 
 permalink: /blog/2021-08-31-programmers_hash_4/

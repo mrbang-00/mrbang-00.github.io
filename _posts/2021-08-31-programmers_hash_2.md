@@ -5,7 +5,7 @@ title: Programmers_해시_전화번호 목록
 date: 2021-09-02T11:30:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
 thumbnail: /assets/img/posts/hello.jpg"
-category: gitblog
+category: Programmers
 summary: 프로그래머스 해시 2차 문제 
 keywords: 프로그래머스 programmers hash 2차 
 permalink: /blog/2021-08-31-programmers_hash_2/
