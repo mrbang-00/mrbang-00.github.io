@@ -1,7 +1,7 @@
 ---
 layout: post
 author: mrbang
-title: Programmers_해시_베스트앨범
+title: 프로그래머스_해시_베스트앨범_Programmers
 date: 2021-09-02T11:30:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
 thumbnail: /assets/img/posts/Programmers.jpg"
