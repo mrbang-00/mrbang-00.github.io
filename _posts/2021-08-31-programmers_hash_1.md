@@ -1,7 +1,7 @@
 ---
 layout: post
 author: mrbang
-title: programmers_해시_완주하지 못한선수
+title: Programmers_해시_완주하지 못한선수
 date: 2021-09-02T11:30:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
 thumbnail: /assets/img/posts/hello.jpg"
