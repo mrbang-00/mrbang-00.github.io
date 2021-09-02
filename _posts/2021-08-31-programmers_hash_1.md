@@ -7,12 +7,10 @@ date: 2021-09-02T11:30:00.613Z
 thumbnail: /assets/img/posts/hello.jpg"
 category: gitblog
 summary: 프로그래머스 해시 1차 문제 
-keywords: git start 시작 블로그 계정추가 사용자추가 
+keywords: 프로그래머스 programmers hash 1차 
 permalink: /blog/using-netlify-cms/
 ---
 # 완주하지 못한 선수
-
-현재 jekyll로 구성된 문법 확인중인데 정말 잘만들것 같다. Rubby 공부를 시작해야겠다. 
 
 **문제 설명** 문제 [주소](https://programmers.co.kr/learn/courses/30/lessons/42576).
 
