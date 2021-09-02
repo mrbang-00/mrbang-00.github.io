@@ -8,7 +8,7 @@ thumbnail: /assets/img/posts/hello.jpg"
 category: gitblog
 summary: 프로그래머스 해시 2차 문제 
 keywords: 프로그래머스 programmers hash 2차 
-permalink: /blog/using-netlify-cms/
+permalink: /blog/2021-08-31-programmers_hash_2/
 ---
 # 완주하지 못한 선수
 

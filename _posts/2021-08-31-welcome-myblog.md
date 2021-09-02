@@ -8,7 +8,7 @@ thumbnail: /assets/img/posts/hello.jpg"
 category: gitblog
 summary: 사용자 추가후 시작진행  
 keywords: git start 시작 블로그 계정추가 사용자추가 
-permalink: /blog/using-netlify-cms/
+permalink: /blog/2021-08-31-welcome-myblog/
 ---
 # 대제목으로 적을수 있습니다. 
 
