@@ -192,3 +192,4 @@ exclude:
   - vendor/ruby/
 
 destination: ./build
+google_analytics: 'G-JC9LLCL1CX'
