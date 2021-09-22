@@ -10,7 +10,7 @@ summary: 프로그래머스 Heap 1차 문제
 keywords: 프로그래머스 programmers Heap 1차 
 permalink: /blog/2021-09-23-programmers_Heap_1/
 ---
-# 완주하지 못한 선수
+# 더 맵게
 
 **문제 설명** 문제 [주소](https://programmers.co.kr/learn/courses/30/lessons/42626).
 
