@@ -4,7 +4,7 @@ author: mrbang
 title: IIS 백업 정책 설정하기 ( Bat파일을 통한 소스압축 )
 date: 2021-08-28T16:00:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
-thumbnail: /assets/img/posts/hello.jpg"
+thumbnail: /assets/img/posts/developer_tip.jpg"
 category: gitblog
 summary: IIS에서 백업정책 만들기   
 keywords: IIS BACKUP 백업정책 

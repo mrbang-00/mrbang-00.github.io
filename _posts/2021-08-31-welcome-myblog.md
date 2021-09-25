@@ -4,7 +4,7 @@ author: mrbang
 title: 깃블로그 시작을 알리며 ( 템플릿 모음 - 이걸로 구분진행 )
 date: 2021-08-28T16:00:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
-thumbnail: /assets/img/posts/hello.jpg"
+thumbnail: /assets/img/posts/developer_tip.jpg"
 category: gitblog
 summary: 사용자 추가후 시작진행  
 keywords: git start 시작 블로그 계정추가 사용자추가 
