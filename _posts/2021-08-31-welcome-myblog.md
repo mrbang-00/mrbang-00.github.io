@@ -2,7 +2,7 @@
 layout: post
 author: mrbang
 title: 깃블로그 시작을 알리며 ( 템플릿 모음 - 이걸로 구분진행 )
-date: 2021-08-28T16:00:00.613Z
+date: 2021-08-31T16:00:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
 thumbnail: /assets/img/posts/developer_tip.jpg"
 category: gitblog
