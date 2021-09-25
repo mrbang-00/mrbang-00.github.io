@@ -20,7 +20,8 @@ permalink: /blog/2021-09-25-mysql_linux_install/
 
 **절차** 
 
-1. 해당 명령어를 통해 리눅스 서버의 정보를 조회한다. 
+* 1.해당 명령어를 통해 리눅스 서버의 정보를 조회한다. 
+
 > “
 `grep . /etc/*-release`
 /etc/lsb-release:DISTRIB_ID=Ubuntu
@@ -44,7 +45,7 @@ permalink: /blog/2021-09-25-mysql_linux_install/
 신규 서버 : /etc/centos-release:CentOS Linux release 7.2.1511 (Core)
 ”
 
-2. 기존 Mysql 버전 확인 
+* 2.기존 Mysql 버전 확인 
 
 > “
 SELECT VERSION();
@@ -52,7 +53,7 @@ SELECT VERSION();
 ”
 해당 명령어를 통해 Mysql 버전을 확인한다. 
 
-3. 설치 과정
+* 3.설치 과정
 
 > “
 * wget 설치
@@ -92,9 +93,7 @@ Mysql 5.7 버전이상에서는 비밀번호 설정 강도가 강화되어 규�
 대문자, 숫자, 특수문자가 포함된 12자리를 지정하라고 한다. 
 ”
 
-4. Mysql 관리 
-
-> “
+* 4.Mysql 관리 
 
 > “
 * wget 설치
@@ -166,4 +165,4 @@ $ vi /etc/my.cnf bind-address 0.0.0.0 #
 mysql 워크벤치나 외부접속 툴에서 접속이 가능하기 위해서는 위 명령어를 설정해주어야 한다.
 ”
 
-”
+
