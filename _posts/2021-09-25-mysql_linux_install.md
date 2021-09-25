@@ -47,122 +47,102 @@ permalink: /blog/2021-09-25-mysql_linux_install/
 
 * 2.기존 Mysql 버전 확인 
 
-> “
+>
 SELECT VERSION();
 5.7.13
-”
+
 해당 명령어를 통해 Mysql 버전을 확인한다. 
 
 * 3.설치 과정
 
-> “
+>
 * wget 설치
 $ yum install wget
-”
 
-> “
+
+>
 * MySQL 다운로드
 $ wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
-”
 
-> “
+
+>
 * MySQL 설치
 $ sudo rpm -ivh mysql57-community-release-el7-11.noarch.rpm
-”
 
-> “
+>
 * MySQL 서버 설치
 $ sudo yum install mysql-server
-”
 
-> “
+>
 * 서비스 시작
 $ sudo systemctl start mysqld
 MySQL은 루트 로그인이나 샘플 유저와 같이 보안 수준이 낮은 기본 옵션을 변경해주는 보안 스크립트가 포함 되어있다.
-”
 
-> “
+>
 * 보안 스크립트 실행
 $ sudo mysql_secure_installation
-
 기본 루트 암호를 묻는 메시지에서는 새로운 비밀번호를 입력하라고 나온다. 
-
 `The existing password for the user account root has expired. Please set a new password. New password:`
-
 Mysql 5.7 버전이상에서는 비밀번호 설정 강도가 강화되어 규칙이 변경되었다. 
 대문자, 숫자, 특수문자가 포함된 12자리를 지정하라고 한다. 
-”
 
 * 4.Mysql 관리 
 
-> “
+>
 * wget 설치
 $ yum install wget
-”
 
-> “
+>
 * Mysql 정지
 $ systemctl stop mysqld
-”
 
-> “
+>
 * Mysql 환경 옵션 설정
 $ systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
 해당 명령어를 통해 mysql safe설정 변경 
 이유 : 기존에는 mysql safe를 사용하지만 5.7이상부터는 systemd에서 관리를 한다고 한다. 
-”
 
-> “
+>
 * Mysql 시작
 $ systemctl start mysqld
-”
 
-> “
+>
 * Mysql 로그인
 $ mysql -u root
 root로 접속이 가능하다. 
-”
 
-> “
+>
 * 루트 비밀번호 변경
 mysql> UPDATE mysql.user SET authentication_string = PASSWORD('새로운 비밀번호') -> WHERE User = 'root' AND Host = 'localhost'; mysql> FLUSH PRIVILEGES; mysql> exit
-”
 
-> “
+>
 * Mysql 정지
 $ systemctl stop mysqld
-”
 
-> “
+>
 * Mysql 환경 옵션 설정 해제 
 $ systemctl unset-environment MYSQLD_OPTS
 - 환경 옵션 설정 해제 명령어 
-”
 
-> “
+>
 * Mysql 시작
 $ systemctl start mysqld
-”
 
-> “
+>
 * Mysql 로그인
 $ mysql -u root -p
-”
 
-> “
+>
 * Mysql사용자 추가
 mysql> create user '사용자'@'localhost' identified by '비밀번호';
-”
 
-> “
+>
 * 권한 부여
 mysql> grant all privileges on *.* to '사용자'@'%';
-”
 
-> “
+>
 * 외부 접속 허용
 $ vi /etc/my.cnf bind-address 0.0.0.0 # 
 mysql 워크벤치나 외부접속 툴에서 접속이 가능하기 위해서는 위 명령어를 설정해주어야 한다.
-”
 
 
