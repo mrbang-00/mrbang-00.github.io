@@ -4,7 +4,7 @@ author: mrbang
 title: MYSQL_Linux에서 Mysql설치
 date: 2021-09-23T00:30:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
-thumbnail: /assets/img/posts/Programmers.jpg"
+thumbnail: /assets/img/posts/developer_tip.jpg"
 category: Programmers
 summary: Linux에서 Mysql설치
 keywords: Linux, Mysql설치
