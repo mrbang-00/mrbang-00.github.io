@@ -22,7 +22,7 @@ permalink: /blog/2021-09-25-mysql_linux_install/
 
 * 1.해당 명령어를 통해 리눅스 서버의 정보를 조회한다. 
 
-> “
+>
 `grep . /etc/*-release`
 /etc/lsb-release:DISTRIB_ID=Ubuntu
 /etc/lsb-release:DISTRIB_RELEASE=14.04
@@ -37,13 +37,13 @@ permalink: /blog/2021-09-25-mysql_linux_install/
 /etc/os-release:HOME_URL="http://www.ubuntu.com/"
 /etc/os-release:SUPPORT_URL="http://help.ubuntu.com/"
 /etc/os-release:BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
-”
+
 대략 이렇게 조회가 된다. 
 
-> “
+>
 기존 서버 : /etc/centos-release:CentOS Linux release 7.1.1503 (Core)
 신규 서버 : /etc/centos-release:CentOS Linux release 7.2.1511 (Core)
-”
+
 
 * 2.기존 Mysql 버전 확인 
 
