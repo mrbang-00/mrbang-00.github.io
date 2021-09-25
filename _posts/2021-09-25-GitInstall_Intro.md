@@ -8,7 +8,7 @@ thumbnail: /assets/img/posts/developer_tip.jpg"
 category: Develope_Tip
 summary: 윈도우에서 git사용하기 
 keywords: Git설치 VisualStudioCode
-permalink: /blog/2021-09-25-git_start/
+permalink: /blog/2021-09-25-GitInstall_Intro/
 ---
 # Linux에서 Mysql설치
 
@@ -18,9 +18,7 @@ permalink: /blog/2021-09-25-git_start/
 
 **방법** 
 
-* 1.Git설치하기 
-
-[주소](https://www.git-scm.com/).
+* 1.Git설치하기 [주소](https://www.git-scm.com/).
 
 >
 1. `Git 설치하기`
