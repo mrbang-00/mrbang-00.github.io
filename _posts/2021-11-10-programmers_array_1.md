@@ -10,7 +10,7 @@ summary: 프로그래머스 정렬 1차 문제
 keywords: 프로그래머스 programmers 정렬 1차 
 permalink: /blog/2021-11-10-programmers_array_1/
 ---
-# 더 맵게
+# K번째수
 
 **문제 설명** 문제 [주소](https://programmers.co.kr/learn/courses/30/lessons/42748?language=java).
 
