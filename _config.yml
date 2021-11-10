@@ -93,7 +93,7 @@ wakatime_username: mrbang-00
 mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
-# getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
+getform_endpoint: 18550d09-b111-4bcc-ab30-d55430db6dbe
 formspree_email: bang7233@gmail.com
 
 # releases - widget can be (sidebar, modal or embed)
