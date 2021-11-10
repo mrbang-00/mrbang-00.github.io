@@ -35,7 +35,7 @@ typewrite-text: 백팩킹, 등산, 캠핑, 이야기, 자전거, 하이킹, 보�
 # Experiences
 author_work_experiences:
             - company_name: BackEnd DEVELOPER
-             company_logo: dev.jfif  
+              company_logo: dev.png
               # company_url: https://google.com
               designation: Software Engineer
               description: BackEnd DEVELOPER
