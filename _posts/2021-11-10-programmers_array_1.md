@@ -49,34 +49,42 @@ permalink: /blog/2021-11-10-programmers_array_1/
 // 특정 값이 담겨있는 배열A가 있고 
 // A값을 가공할수 있는 조건이 있는 배열B가 있을때 그 규칙에 맞게 리턴되는 값을 배열에 담아서 리턴하는 문제이다. 
 // B배열의 규칙은 [가,나,다] 이렇게 존재 할때 A배열에서 '가'에서 '나'까지의 값을 구한뒤 '다'번째 값을 배열에 담아서 리턴하는 문제이다. 
-import java.util.*;                 // 자바 형변환을 위해서 인위적으로 * 으로 선언
-import java.util.Arrays;            // 배열을 사용하기 위해서 arrays를 추가하였으나 형변환을 위해서 *을 선언하였는데 형변환만 진행되는 IMPORT내역 찾아보기 
+import java.util.*;                 
+import java.util.Arrays;            
+// 자바 형변환을 위해서 인위적으로 * 으로 선언
+// 배열을 사용하기 위해서 arrays를 추가하였으나 형변환을 위해서 *을 선언하였는데 형변환만 진행되는 IMPORT내역 찾아보기 
+// Solution이라는 클래스를 만듭니다. 
+class Solution {                    
 
-class Solution {                    // Solution이라는 클래스를 만듭니다. 
-
-    public int[] solution(int[] array, int[][] commands) {      // 정수형 solution은 2개의 매개변수를 받는데 정수형배열 array, 정수형2차원 배열 commands를 받는다. 
-        
-        int[] answer = {};                                      // 정수형 배열 answer을 선언한다. 
-        answer = new int[commands.length];                      // 정수형 배열에 대한 크기 선언을 한다.   (크기를 지정하지 않으면 배열에 값을 못넣는다.)
+    public int[] solution(int[] array, int[][] commands) {      
+        // 정수형 solution은 2개의 매개변수를 받는데 정수형배열 array, 정수형2차원 배열 commands를 받는다. 
+        // 정수형 배열 answer을 선언한다. 
+        // 정수형 배열에 대한 크기 선언을 한다.   (크기를 지정하지 않으면 배열에 값을 못넣는다.)
+        int[] answer = {};                                      
+        answer = new int[commands.length];                      
         
      try {
 
-         for(int i =0; i < commands.length; i++ ){              // for 문을 시작하는데 B배열에 대한 길이만큼 진행한다. 문제예시는 3개가 있으므로 3개까지 진행 된다. 
-        
-             int[] arr_answer = Arrays.copyOfRange(array, (commands[i][0])-1 , commands[i][1] );        // Arrays.copyOfRange 함수를 이용하여 B조건에 해당되는 값을 구한다. 
-                                                                                                        // Arrays.copyOfRange는 (배열, 시작, 종료) 이렇게 하면 배열에서 시작열에서 종료열에 대한 값을 선택하여 값을 리턴하게 된다.  B배열 2,5,3 이렇게 있으면 배열에서 2번째에서 5번째 까지 값을 리턴하게 되는데 배열은 0부터 시작하게 되니 [1, 5, 2, 6, 3, 7, 4]에서 2,6,3이 리턴이 된다. 2,5로 해당 함수를 실행하면 2,6,3으로 리턴이 된다. 그러므로 시작값에서 -1을 진행하며 2번째부터 시작한다는것을 명시해 주었다. 
+         for(int i =0; i < commands.length; i++ ){              
+             // for 문을 시작하는데 B배열에 대한 길이만큼 진행한다. 문제예시는 3개가 있으므로 3개까지 진행 된다. 
+             // Arrays.copyOfRange 함수를 이용하여 B조건에 해당되는 값을 구한다. 
+             // Arrays.copyOfRange는 (배열, 시작, 종료) 이렇게 하면 배열에서 시작열에서 종료열에 대한 값을 선택하여 값을 리턴하게 된다.  
+             // B배열 2,5,3 이렇게 있으면 배열에서 2번째에서 5번째 까지 값을 리턴하게 되는데 배열은 0부터 시작하게 되니 [1, 5, 2, 6, 3, 7, 4]에서 
+             // 2,6,3이 리턴이 된다. 2,5로 해당 함수를 실행하면 2,6,3으로 리턴이 된다. 그러므로 시작값에서 -1을 진행하며 
+             // 2번째부터 시작한다는것을 명시해 주었다.         
+             int[] arr_answer = Arrays.copyOfRange(array, (commands[i][0])-1 , commands[i][1] );      
              
-             Arrays.sort(arr_answer);                                                                   // Arrays.sort를 통해서 오름차순 정렬을 진행
+             Arrays.sort(arr_answer);                                                                   
              System.out.println("[i]>>>>" + i);
+             // Arrays.sort를 통해서 오름차순 정렬을 진행
+             // B배열의 3번째 값을 담아둔다.                
+             int last_val = (commands[i][2]);                                                           
              
-             int last_val = (commands[i][2]);                                                           // B배열의 3번째 값을 담아둔다.                
-             
+             // 구한 값을 담을 answer배열에 i번째에 해당값을 추가해둔다. 
              System.out.println("[arr_answer[last_val-1]]>>>>" + arr_answer[last_val-1]);
-             answer[i] = arr_answer[last_val-1];                                                        // 구한 값을 담을 answer배열에 i번째에 해당값을 추가해둔다. 
+             answer[i] = arr_answer[last_val-1];                                                        
                 
          }
-
-
          
          System.out.println("[answer.length]" + answer.length);
          
