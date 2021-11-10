@@ -216,7 +216,7 @@ social:  # Author Social profile links
     - title: "facebook"
       url: "https://www.facebook.com/johndoe"
     - title: "twitter"
-      url: "https://www.twitter.com/johndoe"
+      url: "https://www.twitter.com/bang7233"
     - title: "behance"
       url: "https://behance.com/johndoe"
     - title: "instagram"
