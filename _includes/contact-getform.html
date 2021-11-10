@@ -3,20 +3,20 @@
 <!-- Add the getform-endpoint in config.yml -->
 <form action="https://getform.io/f/{{site.getform_endpoint}}" enctype="multipart/form-data" method="POST"  target="_blank">
     <div class="form-group">
-            <label for="contact_form_name">Your Name :</label>
+            <label for="contact_form_name">이름을 입력해주세요(Your Name) :</label>
             <input type="text" class="form-control" name="name" id="contact_form_name" placeholder="Enter Your Name">
            </div>
            <div class="form-group">
-             <label for="contact_form_email">Your Email :</label>
+             <label for="contact_form_email">이메일을 입력해주세요(Your Email) :</label>
             <input type="email" class="form-control" name="email" id="contact_form_email" placeholder="Enter Your Email">
            </div>
            <div class="form-group">
-             <label for="contact_form_message"> Your Message :</label>
+             <label for="contact_form_message">문의하실내용을 입력해주세요(Your Message) :</label>
             <textarea name="message" class="form-control" id="contact_form_message" placeholder="Enter Your Message"></textarea>
            </div>
            <div class="form-group">
-               <label for="contact-form-file"> Attachments :</label>
+               <label for="contact-form-file">첨부하실내용을 첨부해주세요(Attachments) :</label>
             <input type="file" name="file" class="form-control" id="contact-form-file" placeholder="Attach files"/>
            </div>
-            <button type="submit" value="Send" class="btn btn-lg btn-dark">Submit</button>
+            <button type="submit" value="Send" class="btn btn-lg btn-dark">문의하기</button>
 </form>
