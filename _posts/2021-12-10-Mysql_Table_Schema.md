@@ -15,10 +15,6 @@ permalink: /blog/2021-12-10-Mysql_Table_Schema/
 개발을 진행 할때 DB명세서 작성진행시 사용할수 있는 쿼리 내역 
 
  `이렇게 호출하여 개발로 구성하여 엑셀다운로드로 구성하기 `
- 
-
-
-![Author Sidebar Widget](https://mrbang-00.github.io/assets/img/post/211110server_mirrorring.png)
 
 **01. DB 쿼리** 
 
