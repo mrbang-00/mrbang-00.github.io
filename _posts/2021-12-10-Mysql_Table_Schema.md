@@ -1,7 +1,7 @@
 ---
 layout: post
 author: mrbang
-title: 서버이중화
+title: Mysql DB 명세서 추출 쿼리(엑셀매크로포함)
 date: 2021-12-10T11:00:00.613Z
 # thumbnail: /assets/img/posts/hello.jpg
 thumbnail: /assets/img/posts/developer_tip.jpg"
