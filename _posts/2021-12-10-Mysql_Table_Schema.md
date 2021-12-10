@@ -43,3 +43,50 @@ ORDER BY
     t1.table_name, ordinal_position;
 
 ```
+
+**02. 엑셀 메크로만들기** 
+
+> “*같은 값의 셀 병합하는 매크로
+실행은 ALT + F8을 클릭하여 매크로를 생성 후 엑셀에서 해당매크로를 실행하여 진행”
+
+
+```java
+
+Sub SameCellMerge()
+    Dim rngTarget As Range
+    Dim rngCell As Range
+    Dim strAddress As String
+    Dim intNum As Long
+    Dim intCount As Long
+    Dim intTemp2 As Long
+    Dim intTemp As Long
+    Dim i As Integer
+    Application.DisplayAlerts = False
+    On Error GoTo ET
+    Set rngTarget = Application.InputBox("대상 영역을 선택하세요", "영역 선택", Type:=8, Default:=strAddress)
+    intNum = rngTarget.Cells.Count
+  
+    For Each rngCell In rngTarget
+        intTemp = intTemp + 1
+        intTemp2 = intNum - intTemp 
+        If Len(rngCell) > 0 Then
+            i = 0
+            For intCount = 1 To intTemp2
+                If rngCell.Offset(intCount, 0) = rngCell Then
+                    i = i + 1
+                Else
+                    Exit For
+                End If
+            Next intCount
+            If i > 0 Then Range(rngCell, rngCell.Offset(i, 0)).Merge
+          
+        End If
+    Next rngCell
+    rngTarget.VerticalAlignment = xlCenter
+    Application.DisplayAlerts = True
+    Exit Sub
+ET:
+    MsgBox "영역 선택이 잘못되었습니다. 영역을 다시 선택하세요!", , "에러 번호: " & Err.Number
+End Sub
+
+```
