@@ -28,11 +28,11 @@ Git공식홈페이지에서 Window 버전다운로드
 
 >
 1. `Git Bash실행 및 설정 `
-해당 컴퓨터에서 Git을 사용하기 위한 설정을 진행 한다. 
+해당 컴퓨터에서 Git을 사용하기 위한 설정을 진행 한다. (Git Bash 실행)
 2. 명령어 
-사용자명 지정 : $ git conifg --global user .name "사용자명"
-이메일 지정 : $ git conifg --global user .email "이메일주소@이메일주소"
-설정내역 확인 : $ git conifg --list
+- 사용자명 지정 : $ git conifg --global user .name "사용자명"
+- 이메일 지정 : $ git conifg --global user .email "이메일주소@이메일주소"
+- 설정내역 확인 : $ git conifg --list
 
 >
 1. `VSCode에서 설정 `
